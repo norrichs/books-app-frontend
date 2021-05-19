@@ -9,7 +9,7 @@ const Modal = (props) => {
 			case "create":
 				return (
 					<CreateForm
-						handleCreate={props.handleFormSubmit}
+						handleSubmitForm={props.handleSubmitForm}
 						emptyBook={props.book}
 					/>
 				);
@@ -24,7 +24,7 @@ const Modal = (props) => {
 				);
 				break;
 			default:
-				return <h1>no form</h1>
+				return <h1>no form</h1>;
 		}
 	};
 	const showModal = () => {

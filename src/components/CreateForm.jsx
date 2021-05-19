@@ -32,7 +32,7 @@ const CreateForm = (props) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		props.handleCreate(formData);
+		props.handleSubmitForm(formData);
 	};
 
 	return (
